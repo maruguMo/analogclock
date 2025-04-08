@@ -1,6 +1,6 @@
 
 
-# DIGITAL CLOCK
+# ANALOG CLOCK
 
 
 
