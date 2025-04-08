@@ -8,7 +8,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-image: url('./98fe172e-15dc-4ca6-b25c-c8209a59aff8.png');
+    background-position: center,center;
+    background-size: cover;
+    background-blend-mode:hard-light;
 }
 .clock-outer{
     position: absolute;
