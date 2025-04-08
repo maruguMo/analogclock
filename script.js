@@ -31,18 +31,17 @@ document.addEventListener('DOMContentLoaded', function () {
             tickText.className="tick-text";
             tickText.textContent =i;
             // tickText.style.color="gold";
-            tickText.style.zIndex="5";
+            tickText.style.zIndex="2";
             
             // Position the tick mark using CSS transforms
-            tickMark.style.transform = `rotate(${angle}deg) translateY(-140px)`;
+            tickMark.style.transform = `rotate(${angle}deg) translateY(-300px)`;
             // tickText.style.transform = `rotate(${angle}deg) translateY(-140px) `;
             tickText.style.transform = `
                     rotate(${angle}deg) 
-                    translateY(-125px)
-
+                    translateY(-280px)
                 `;
             // Append the tick mark to the container
-            tickMarksContainer.appendChild(tickMark);
+            // tickMarksContainer.appendChild(tickMark);
             textMarksContainer.appendChild(tickText);
         }
     }
@@ -67,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             hourMark.className = 'hour-mark';
 
             // Position the hour mark using CSS transforms
-            hourMark.style.transform = `rotate(${angle}deg) translateY(-140px)`;
+            hourMark.style.transform = `rotate(${angle}deg) translateY(-320px)`;
 
             // Append the hour mark to the container
             hourMarksContainer.appendChild(hourMark);

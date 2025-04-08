@@ -18,8 +18,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 320px;
+    width: 720px;
+    height: 720px;
     border: 1px rgb(58, 55, 55);
     border-style:outset;
     border-radius: 50%;
@@ -29,8 +29,8 @@ body {
 }
 .clock {
     position: absolute;
-    width: 300px;
-    height: 300px;
+    width: 700px;
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,14 +61,14 @@ body {
 
 .hour-hand {
     width: 8px;
-    height: 80px;
+    height: 200px;
     z-index: 21;
     background-color: white;
 }
 
 .minute-hand {
     width: 6px;
-    height: 120px;
+    height: 250px;
     z-index: 22;
     background-color:goldenrod;
 }
@@ -76,7 +76,7 @@ body {
 .second-hand {
     position: absolute;
     width: 3px;
-    height: 140px;
+    height: 300px;
     background-color:red;
     border-radius: 0% 50% 0% 50%;
     z-index: 40;
@@ -97,13 +97,13 @@ body {
 
 .hour-mark {
     position: absolute;
-    top: 45.9%;
+    top: 46.5%;
     left: 49.5%;
     padding: 0;
     margin: 0;
     transform: translate(-50%, -50%);
-    width: 4px; /* Larger width */
-    height: 27px; /* Larger height */
+    width: 5px; /* Larger width */
+    height: 50px; /* Larger height */
     background-color:rgba(99, 139, 4, 0.87);
     z-index: 0; /* Ensure hour marks appear above tick marks */
 }
@@ -117,7 +117,7 @@ li {
     transform: translate(-50%, -50%);
     transform-origin: center;
     width: 1px;
-    height: 10px;
+    height: 20px;
     background-color:white;
     z-index: 0;
 }
@@ -130,10 +130,10 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5px;
-    color: rgb(224, 220, 209);
+    font-size: 16px;
+    color: goldenrod;
     height: 0px;
-    width: 7px;
+    width: 0px;
     border-radius: 50%;
     padding: 0;
     margin: 0;
@@ -148,8 +148,8 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110%;
-    width: 110%;
+    height: 100%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -199,14 +199,14 @@ li {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 20px;
-    width: 65px;
+    height: 35px;
+    width: 100px;
     background-color:black;
     color: goldenrod;
     border-style:groove;
     z-index: 1;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: normal;
     padding: 0;
     margin: 0;
@@ -253,7 +253,7 @@ li {
     transform-origin: center;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bolder;
     font-family: 'Source Sans', 'sans-serif';
     color: goldenrod;
@@ -265,17 +265,17 @@ li {
 
 
 
-.number:nth-child(1) { transform: rotate(30deg) translateY(-115px) rotate(-30deg);}
-.number:nth-child(2) { transform: rotate(60deg) translateY(-115px) rotate(-60deg);}
-.number:nth-child(3) { transform: rotate(90deg) translateY(-115px) rotate(-90deg);}
-.number:nth-child(4) { transform: rotate(120deg) translateY(-115px) rotate(-120deg);}
-.number:nth-child(5) { transform: rotate(150deg) translateY(-115px) rotate(-150deg);}
-.number:nth-child(6) { transform: rotate(180deg) translateY(-115px) rotate(-180deg);}
-.number:nth-child(7) { transform: rotate(210deg) translateY(-115px) rotate(-210deg);}
-.number:nth-child(8) { transform: rotate(240deg) translateY(-115px) rotate(-240deg);}
-.number:nth-child(9) { transform: rotate(270deg) translateY(-115px) rotate(-270deg);}
-.number:nth-child(10) { transform: rotate(300deg) translateY(-115px) rotate(-300deg);}
-.number:nth-child(11) { transform: rotate(330deg)translateY(-115px) rotate(-330deg);}
-.number:nth-child(12) { transform: rotate(0deg) translateY(-115px) rotate(0deg);}
+.number:nth-child(1) { transform: rotate(30deg) translateY(-240px) rotate(-30deg);}
+.number:nth-child(2) { transform: rotate(60deg) translateY(-240px) rotate(-60deg);}
+.number:nth-child(3) { transform: rotate(90deg) translateY(-240px) rotate(-90deg);}
+.number:nth-child(4) { transform: rotate(120deg) translateY(-240px) rotate(-120deg);}
+.number:nth-child(5) { transform: rotate(150deg) translateY(-240px) rotate(-150deg);}
+.number:nth-child(6) { transform: rotate(180deg) translateY(-240px) rotate(-180deg);}
+.number:nth-child(7) { transform: rotate(210deg) translateY(-240px) rotate(-210deg);}
+.number:nth-child(8) { transform: rotate(240deg) translateY(-240px) rotate(-240deg);}
+.number:nth-child(9) { transform: rotate(270deg) translateY(-240px) rotate(-270deg);}
+.number:nth-child(10) { transform: rotate(300deg) translateY(-240px) rotate(-300deg);}
+.number:nth-child(11) { transform: rotate(330deg)translateY(-240px) rotate(-330deg);}
+.number:nth-child(12) { transform: rotate(0deg) translateY(-240px) rotate(0deg);}
 
 
