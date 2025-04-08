@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     position: relative;
     width: 100vw;
@@ -67,10 +68,11 @@ body {
 }
 
 .minute-hand {
-    width: 6px;
+    width: 2px;
     height: 250px;
     z-index: 22;
-    background-color:goldenrod;
+    background-color:white;
+    box-shadow: 0px 0px 5px 5px goldenrod;
 }
 
 .second-hand {
@@ -104,7 +106,7 @@ body {
     transform: translate(-50%, -50%);
     width: 5px; /* Larger width */
     height: 50px; /* Larger height */
-    background-color:rgba(99, 139, 4, 0.87);
+    background-color:rgba(30, 197, 30, 0.753);
     z-index: 0; /* Ensure hour marks appear above tick marks */
 }
 li {
@@ -130,6 +132,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: goldenrod;
     height: 0px;
@@ -192,9 +195,19 @@ li {
     margin: 0;
     padding: 0;
 }
-
+button{
+  
+    z-index: 20;
+    font-size: 25px;
+    font-family: 'Fira sans', 'monospace';
+    background-color: black;
+    color: goldenrod;
+    border-style:groove;
+    border-radius: 15%;
+    box-shadow: 0px 0px 5px 5px goldenrod;
+}
 .digitalf{
-    font-family: 'Montserrat', 'monospace';
+    font-family: 'Fira sans', 'monospace';
     position: absolute;
     top: 60%;
     left: 50%;
@@ -206,6 +219,9 @@ li {
     border-style:groove;
     z-index: 1;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 25px;
     font-weight: normal;
     padding: 0;
@@ -255,7 +271,7 @@ li {
     text-align: center;
     font-size: 40px;
     font-weight: bolder;
-    font-family: 'Source Sans', 'sans-serif';
+    font-family: 'Fira Sans', 'sans-serif';
     color: goldenrod;
     display: flex; /* Added to center the number */
     justify-content: center; /* Added to center the number */
