@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="btn-sound" id="sound-button">Sound</button>
+    <audio id="sound" src="clock.mp3"></audio>
+    <div class="clock-outer">
+        <div class="clock">
+            <div class="hourmarkscontainer">
+                <ul class ="marks" id="hour-marks"></ul>
+            </div>
+            <div class="ticktextcontainer">
+                <ul class="textmarks" id="text-marks"></ul>
+            </div>
+            <div class="tickmarkscontainer">
+                <ul class ="marks" id="tick-marks"></ul>
+            </div>
+            <div class="numbers-cont">
+                <div class="number number1">1</div>
+                <div class="number number2">2</div>
+                <div class="number number3">3</div>
+                <div class="number number4">4</div>
+                <div class="number number5">5</div>
+                <div class="number number6">6</div>
+                <div class="number number7">7</div>
+                <div class="number number8">8</div>
+                <div class="number number9">9</div>
+                <div class="number number10">10</div>
+                <div class="number number11">11</div>
+                <div class="number number12">12</div>
+                
+            </div>   
+            <div class="hand hour-hand"></div>
+            <div class="hand minute-hand"></div>
+            <div class="hand second-hand"></div>
+            <div class="center-dot"></div>
+
+            <div class="digitalf">10:00:00</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</HTML>

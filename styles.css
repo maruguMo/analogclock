@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.clock-outer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+    border: 1px rgb(58, 55, 55);
+    border-style:outset;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.clock {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform:translate(-50%, -50%);
+    background: radial-gradient(circle at center, #b9aeae, #353333);
+    background-image: url('./98fe172e-15dc-4ca6-b25c-c8209a59aff8.png');
+    background-position: center,center;
+    background-size: cover;
+    background-blend-mode:hard-light;
+    border: 3px rgb(175, 170, 170);
+    border-style: groove;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px rgba(115, 99, 116, 0.918);
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    background-color: #7e7c7c;
+    z-index: 20;
+}
+
+.hour-hand {
+    width: 8px;
+    height: 80px;
+    z-index: 21;
+    background-color: white;
+}
+
+.minute-hand {
+    width: 6px;
+    height: 120px;
+    z-index: 22;
+    background-color:goldenrod;
+}
+
+.second-hand {
+    position: absolute;
+    width: 3px;
+    height: 140px;
+    background-color:red;
+    border-radius: 0% 50% 0% 50%;
+    z-index: 40;
+    padding:0;
+    margin: 0;
+}
+.marks{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hour-mark {
+    position: absolute;
+    top: 45.9%;
+    left: 49.5%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    width: 4px; /* Larger width */
+    height: 27px; /* Larger height */
+    background-color:rgba(99, 139, 4, 0.87);
+    z-index: 0; /* Ensure hour marks appear above tick marks */
+}
+li {
+    list-style: none;
+}
+.tick-mark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    width: 1px;
+    height: 10px;
+    background-color:white;
+    z-index: 0;
+}
+.tick-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    background-color:#3f3d3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5px;
+    color: rgb(224, 220, 209);
+    height: 0px;
+    width: 7px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+    background-image: url('./98fe172e-15dc-4ca6-b25c-c8209a59aff8.png');
+    background-position: center,center;
+    background-size: cover;
+    background-blend-mode:hard-light;
+}
+.tickmarkscontainer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110%;
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.ticktextcontainer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hourmarkscontainer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center-dot {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color:transparent;
+    border: 15px;
+    border-color:radial-gradient(circle at center, #b9aeae, #3f3d3d);
+    border-style:ridge;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+}
+
+.digitalf{
+    font-family: 'Montserrat', 'monospace';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 65px;
+    background-color:black;
+    color: goldenrod;
+    border-style:groove;
+    z-index: 1;
+    text-align: center;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+.btn-sound{
+    height: auto;
+    width: auto;
+    top: 50%;
+    left: 0;
+    position: absolute;
+    z-index: 100;
+}
+.marks-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.numbers-cont{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;    
+    transform: translate(-50%, -50%);
+
+}
+.number {
+    position:absolute;
+    transform-origin: center;
+    top: 50%;
+    left: 50%;
+    height: 0px;
+    width: 7px;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Source Sans', 'sans-serif';
+    color: goldenrod;
+    display: flex; /* Added to center the number */
+    justify-content: center; /* Added to center the number */
+    align-items: center; /* Added to center the number */
+    z-index: 3;
+}
+
+
+
+.number:nth-child(1) { transform: rotate(30deg) translateY(-115px) rotate(-30deg);}
+.number:nth-child(2) { transform: rotate(60deg) translateY(-115px) rotate(-60deg);}
+.number:nth-child(3) { transform: rotate(90deg) translateY(-115px) rotate(-90deg);}
+.number:nth-child(4) { transform: rotate(120deg) translateY(-115px) rotate(-120deg);}
+.number:nth-child(5) { transform: rotate(150deg) translateY(-115px) rotate(-150deg);}
+.number:nth-child(6) { transform: rotate(180deg) translateY(-115px) rotate(-180deg);}
+.number:nth-child(7) { transform: rotate(210deg) translateY(-115px) rotate(-210deg);}
+.number:nth-child(8) { transform: rotate(240deg) translateY(-115px) rotate(-240deg);}
+.number:nth-child(9) { transform: rotate(270deg) translateY(-115px) rotate(-270deg);}
+.number:nth-child(10) { transform: rotate(300deg) translateY(-115px) rotate(-300deg);}
+.number:nth-child(11) { transform: rotate(330deg)translateY(-115px) rotate(-330deg);}
+.number:nth-child(12) { transform: rotate(0deg) translateY(-115px) rotate(0deg);}
+
+
