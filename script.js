@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // tickText.style.transform = `rotate(${angle}deg) translateY(-140px) `;
             tickText.style.transform = `
                     rotate(${angle}deg) 
-                    translateY(-280px)
+                    translateY(-180px)
                 `;
             // Append the tick mark to the container
             // tickMarksContainer.appendChild(tickMark);
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
             hourMark.className = 'hour-mark';
 
             // Position the hour mark using CSS transforms
-            hourMark.style.transform = `rotate(${angle}deg) translateY(-320px)`;
+            hourMark.style.transform = `rotate(${angle}deg) translateY(-190px)`;
 
             // Append the hour mark to the container
             hourMarksContainer.appendChild(hourMark);

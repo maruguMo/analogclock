@@ -19,8 +19,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 720px;
-    height: 720px;
+    width: 420px;
+    height: 420px;
     border: 1px rgb(58, 55, 55);
     border-style:outset;
     border-radius: 50%;
@@ -30,8 +30,8 @@ body {
 }
 .clock {
     position: absolute;
-    width: 700px;
-    height: 700px;
+    width: 400px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,14 +62,14 @@ body {
 
 .hour-hand {
     width: 8px;
-    height: 200px;
+    height: 100px;
     z-index: 21;
     background-color: white;
 }
 
 .minute-hand {
     width: 2px;
-    height: 250px;
+    height: 150px;
     z-index: 22;
     background-color:white;
     box-shadow: 0px 0px 5px 5px goldenrod;
@@ -78,7 +78,7 @@ body {
 .second-hand {
     position: absolute;
     width: 3px;
-    height: 300px;
+    height: 180px;
     background-color:red;
     border-radius: 0% 50% 0% 50%;
     z-index: 40;
@@ -105,7 +105,7 @@ body {
     margin: 0;
     transform: translate(-50%, -50%);
     width: 5px; /* Larger width */
-    height: 50px; /* Larger height */
+    height: 20px; /* Larger height */
     background-color:rgba(30, 197, 30, 0.753);
     z-index: 0; /* Ensure hour marks appear above tick marks */
 }
@@ -133,7 +133,7 @@ li {
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     color: goldenrod;
     height: 0px;
     width: 0px;
@@ -212,8 +212,8 @@ button{
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 35px;
-    width: 100px;
+    height: 25px;
+    width: 80px;
     background-color:black;
     color: goldenrod;
     border-style:groove;
@@ -222,7 +222,7 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: normal;
     padding: 0;
     margin: 0;
@@ -269,7 +269,7 @@ button{
     transform-origin: center;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bolder;
     font-family: 'Fira Sans', 'sans-serif';
     color: goldenrod;
@@ -281,17 +281,17 @@ button{
 
 
 
-.number:nth-child(1) { transform: rotate(30deg) translateY(-240px) rotate(-30deg);}
-.number:nth-child(2) { transform: rotate(60deg) translateY(-240px) rotate(-60deg);}
-.number:nth-child(3) { transform: rotate(90deg) translateY(-240px) rotate(-90deg);}
-.number:nth-child(4) { transform: rotate(120deg) translateY(-240px) rotate(-120deg);}
-.number:nth-child(5) { transform: rotate(150deg) translateY(-240px) rotate(-150deg);}
-.number:nth-child(6) { transform: rotate(180deg) translateY(-240px) rotate(-180deg);}
-.number:nth-child(7) { transform: rotate(210deg) translateY(-240px) rotate(-210deg);}
-.number:nth-child(8) { transform: rotate(240deg) translateY(-240px) rotate(-240deg);}
-.number:nth-child(9) { transform: rotate(270deg) translateY(-240px) rotate(-270deg);}
-.number:nth-child(10) { transform: rotate(300deg) translateY(-240px) rotate(-300deg);}
-.number:nth-child(11) { transform: rotate(330deg)translateY(-240px) rotate(-330deg);}
-.number:nth-child(12) { transform: rotate(0deg) translateY(-240px) rotate(0deg);}
+.number:nth-child(1) { transform: rotate(30deg) translateY(-150px) rotate(-30deg);}
+.number:nth-child(2) { transform: rotate(60deg) translateY(-150px) rotate(-60deg);}
+.number:nth-child(3) { transform: rotate(90deg) translateY(-150px) rotate(-90deg);}
+.number:nth-child(4) { transform: rotate(120deg) translateY(-150px) rotate(-120deg);}
+.number:nth-child(5) { transform: rotate(150deg) translateY(-150px) rotate(-150deg);}
+.number:nth-child(6) { transform: rotate(180deg) translateY(-150px) rotate(-180deg);}
+.number:nth-child(7) { transform: rotate(210deg) translateY(-150px) rotate(-210deg);}
+.number:nth-child(8) { transform: rotate(240deg) translateY(-150px) rotate(-240deg);}
+.number:nth-child(9) { transform: rotate(270deg) translateY(-150px) rotate(-270deg);}
+.number:nth-child(10) { transform: rotate(300deg) translateY(-150px) rotate(-300deg);}
+.number:nth-child(11) { transform: rotate(330deg)translateY(-150px) rotate(-330deg);}
+.number:nth-child(12) { transform: rotate(0deg) translateY(-150px) rotate(0deg);}
 
 
